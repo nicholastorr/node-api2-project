@@ -19,7 +19,7 @@ router.get("api/posts", (req,res) => {
         })
 })
 
-/ GET the post object with the specified id
+// GET the post object with the specified id
 router.get("/api/posts/:id", (req, res) => {
     posts
         .findById(req.params.id)
@@ -132,6 +132,5 @@ router.get("api/posts/:id/comments", (req, res) => {
 })
 
 
-module.exports = router 
 
 module.exports = router;
